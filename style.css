@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: brown;
+}
+.navbar {
+  /* overflow: hidden; */
+  width: 100%;
+  background-color: #555;
+  /* color: antiquewhite; */
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar a {
+  /* float: right; */
+  color: antiquewhite;
+  /* display: block; */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.header {
+  margin: auto;
+  /* display: block; */
+  margin-top: 40px;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  background-color: darksalmon;
+  border: 10px solid rgb(9, 82, 9);
+
+  text-align: center;
+  width: 80%;
+  height: 150px;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 992px) {
+  body {
+    background-color: darkorchid;
+  }
+  h1 {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+  .header {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: lawngreen;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .header {
+    width: 50%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: mediumturquoise;
+  }
+  .header {
+    width: 45%;
+  }
+  .navbar {
+    display: inline-block;
+  }
+  .navbar a {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    display: none;
+  }
+  h2:after {
+    font-size: 20px;
+    content: "Did you realize, you made magic!";
+  }
+}
